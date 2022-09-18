@@ -1,21 +1,12 @@
 pipeline {
-   agent any
-   stages {
-      stage('STAGE 01') {
-         steps {
-            sh """
-            echo "STAGE 01"
-            """
+    agent any
+    stages {
+        stage('STAGE 01') {
+            steps {
+                sh 'echo Hello Ajinkya'
             }
         }
-      stage('STAGE 02') {
-         steps {
-            sh """
-            echo "STAGE 01"
-            """
-            }
-        }
-   }
+    }
 }
 
 #MULTI-BRANCH PIPELINE
